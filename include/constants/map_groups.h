@@ -79,6 +79,7 @@ enum
     MAP_FARAWAY_ISLAND_OUTSIDE    = (64 | (0 << 8)),
     MAP_ROUTE33SOUTH_UNDERWATER   = (65 | (0 << 8)),
     MAP_ROUTE50UNDERWATER         = (66 | (0 << 8)),
+    MAP_NEW_BARK_TOWN_2           = (67 | (0 << 8)),
 
     // gMapGroup_IndoorNewBark
     MAP_NEW_BARK_TOWN_LAB              = (0 | (1 << 8)),

@@ -637,12 +637,37 @@ struct MapHeader const *const GetDestinationWarpMapHeader(void)
     return Overworld_GetMapHeaderByGroupAndId(sWarpDestination.mapGroup, sWarpDestination.mapNum);
 }
 
+// Maps whose layout changes permanently once a flag is set.
+static const struct {
+    u16 mapGroup;
+    u16 mapNum;
+    u16 flag;
+    u16 layoutId;
+} sFlagLayoutOverrides[] =
+{
+    { MAP_GROUP(MAP_NEW_BARK_TOWN), MAP_NUM(MAP_NEW_BARK_TOWN), FLAG_NEW_BARK_TOWN_LAYOUT_2, LAYOUT_NEW_BARK_TOWN_LAYOUT_2 },
+};
+
+static u16 GetFlagOverriddenLayoutId(u16 mapGroup, u16 mapNum, u16 defaultLayoutId)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sFlagLayoutOverrides); i++)
+    {
+        if (sFlagLayoutOverrides[i].mapGroup == mapGroup
+         && sFlagLayoutOverrides[i].mapNum == mapNum
+         && FlagGet(sFlagLayoutOverrides[i].flag))
+            return sFlagLayoutOverrides[i].layoutId;
+    }
+    return defaultLayoutId;
+}
+
 static void LoadCurrentMapData(void)
 {
     sLastMapSectionId = gMapHeader.regionMapSectionId;
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
-    gSaveBlock1Ptr->mapLayoutId = gMapHeader.mapLayoutId;
-    gMapHeader.mapLayout = GetMapLayout(gMapHeader.mapLayoutId);
+    gSaveBlock1Ptr->mapLayoutId = GetFlagOverriddenLayoutId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, gMapHeader.mapLayoutId);
+    gMapHeader.mapLayout = GetMapLayout(gSaveBlock1Ptr->mapLayoutId);
 }
 
 static void LoadSaveblockMapHeader(void)

@@ -54,6 +54,9 @@ NewBarkTown_EventScript_LabSign::
 NewBarkTown_EventScript_TownSign::
 	msgbox NewBarkTown_Text_Sign, MSGBOX_SIGN
 	closemessage
+	setflag FLAG_NEW_BARK_TOWN_LAYOUT_2
+	warpsilent MAP_NEW_BARK_TOWN, 15, 14
+	waitstate
 	end
 
 
@@ -275,9 +278,7 @@ NewBarkTown_Text_Silver2:
 	.string "…What are you staring at?$"
 
 NewBarkTown_Text_Sign:
-	.string "New Bark Town\p"
-	.string "The Town Where the Winds of\n"
-	.string "a New Beginning Blow$"
+	.string "Testing Layout Switch!\p"
 
 NewBarkTown_EventScript_PlayersHouseMailbox::
 	msgbox NewBarkTown_Text_PlayersHouse, MSGBOX_SIGN

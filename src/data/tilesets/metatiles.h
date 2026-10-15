@@ -581,3 +581,6 @@ const u16 gMetatileAttributes_SpearPillar[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_underwater[] = INCBIN_U16("data/tilesets/primary/underwater/metatiles.bin");
 const u16 gMetatileAttributes_underwater[] = INCBIN_U16("data/tilesets/primary/underwater/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesManaged_SwordOfMana[] = INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesManaged_SwordOfMana[] = INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/metatile_attributes.bin");

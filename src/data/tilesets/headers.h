@@ -2283,3 +2283,14 @@ const struct Tileset gTileset_underwater =
     .metatileAttributes = gMetatileAttributes_underwater,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SwordOfMana =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PorytilesManaged_SwordOfMana,
+    .palettes = gTilesetPalettes_PorytilesManaged_SwordOfMana,
+    .metatiles = gMetatiles_PorytilesManaged_SwordOfMana,
+    .metatileAttributes = gMetatileAttributes_PorytilesManaged_SwordOfMana,
+    .callback = InitTilesetAnim_PorytilesManaged_SwordOfMana,
+};

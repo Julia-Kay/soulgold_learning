@@ -1683,3 +1683,6 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+// [Porytiles] Auto-generated include. Do not remove.
+#include "porytiles_generated/tilesets/sword_of_mana/generated_anim_code.h"

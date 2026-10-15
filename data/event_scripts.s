@@ -2413,5 +2413,3 @@ Common_Text_ReceivedMon:
 	.include "data/maps/Route50UnderwaterCave2/scripts.inc"
 
 	.include "data/maps/BattleCafe/scripts.inc"
-
-	.include "data/maps/NewBarkTown_2/scripts.inc"

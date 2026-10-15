@@ -40,4 +40,7 @@ void InitTilesetAnim_AzaleaTown_Gym(void);
 void InitTilesetAnim_CeladonCity(void);
 void InitTilesetAnim_MtEmber(void);
 
+// [Porytiles] Auto-generated declaration. Do not remove.
+void InitTilesetAnim_PorytilesManaged_SwordOfMana(void);
+
 #endif // GUARD_TILESET_ANIMS_H

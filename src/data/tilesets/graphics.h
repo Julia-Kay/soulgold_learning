@@ -4288,3 +4288,25 @@ const u16 gTilesetPalettes_underwater[][16] =
 };
 
 const u32 gTilesetTiles_underwater[] = INCBIN_U32("data/tilesets/primary/underwater/tiles.4bpp.lz");
+
+const u32 gTilesetTiles_PorytilesManaged_SwordOfMana[] = INCBIN_U32("data/tilesets/primary/sword_of_mana/porytiles_bin/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PorytilesManaged_SwordOfMana[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sword_of_mana/porytiles_bin/palettes/15.gbapal")
+};

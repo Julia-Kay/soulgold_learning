@@ -5066,8 +5066,8 @@
       "name": "Route46_Layout",
       "width": 27,
       "height": 46,
-      "primary_tileset": "gTileset_Johto_NorthWest",
-      "secondary_tileset": "gTileset_CherrygroveCity",
+      "primary_tileset": "gTileset_SwordOfMana",
+      "secondary_tileset": "gTileset_VioletCity",
       "border_filepath": "data/layouts/Route46/border.bin",
       "blockdata_filepath": "data/layouts/Route46/map.bin"
     },
@@ -10346,16 +10346,6 @@
       "secondary_tileset": "gTileset_NewBarkTown",
       "border_filepath": "data/layouts/NewBarkTown_Layout_2/border.bin",
       "blockdata_filepath": "data/layouts/NewBarkTown_Layout_2/map.bin"
-    },
-    {
-      "id": "LAYOUT_NEW_BARK_TOWN_2",
-      "name": "NewBarkTown_2_Layout",
-      "width": 30,
-      "height": 39,
-      "primary_tileset": "gTileset_Johto_General",
-      "secondary_tileset": "gTileset_NewBarkTown",
-      "border_filepath": "data/layouts/NewBarkTown_2/border.bin",
-      "blockdata_filepath": "data/layouts/NewBarkTown_2/map.bin"
     }
   ]
 }
